@@ -26,3 +26,11 @@ function getTotal(){
 totalPaid = currency_quarters + currency_dimes + currency_nickels;
 return totalPaid.toFixed(2);
 }
+function tally() {
+    moneyInserted = getTotal();
+    document.getElementById("paid").innerHTML = moneyInserted;
+}
+function clearTally() {
+    moneyInserted = 0;
+    document.getElementById("paid").innerHTML = moneyInserted;
+}
