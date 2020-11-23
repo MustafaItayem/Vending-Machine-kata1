@@ -106,6 +106,17 @@ function dispenseItems(items) {
         clearTally();
 
         messageEL.innerHTML = msg;
+    }else if (totalPaid == 0){
+        msg = "Please insert money before selecting an item."
+        messageEL.innerHTML = msg;
+    }else if (totalPaid == 0){
+        msg = selectedItems + " has been dispensed." 
+        totalPaid = 0;
+        change = 0;
+        clearForm();
+        clearTally();
+
+        messageEL.innerHTML = msg;
     }
 
 
